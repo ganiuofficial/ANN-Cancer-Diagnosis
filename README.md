@@ -158,7 +158,7 @@ STEP 6: 5-FOLD CROSS-VALIDATION
 
 ## Step 5 — Screenshot the terminal
 
-Take a screenshot of the final metrics block. This is your evaluation evidence for submission.
+Take a screenshot of the final metrics block.
 
 ## Step 6 — View output files
 
