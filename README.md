@@ -56,12 +56,12 @@ module5_ann_cancer/
 **Records:** 569 patients | 30 features | Binary label (Malignant / Benign)  
 **Missing values:** None
 
-The code loads the dataset automatically via `sklearn.datasets.load\_breast\_cancer()` which is identical to the Kaggle CSV. A copy is saved to `ann\_outputs/` on first run.
+The code loads the dataset automatically via `sklearn.datasets.load\_breast\_cancer()` which is identical to the Kaggle CSV. A copy is saved to `ann_outputs/` on first run.
 
-If you prefer to use the Kaggle CSV directly, download `data.csv` from the link above and replace the data loading block in `ann\_cancer\_diagnosis.py` with:
+If you prefer to use the Kaggle CSV directly, download `data.csv` from the link above and replace the data loading block in `ann_cancer_diagnosis.py` or `ann_cancer_diagnosis.ipynb` with:
 
 ```python
-df = pd.read\_csv("data/data.csv")
+df = pd.read_csv("data/data.csv")
 ```
 
 \---
@@ -94,7 +94,7 @@ pip install tensorflow-cpu
 
 ## Step 1 — Open the project folder
 
-`File -> Open Folder -> select the module5\_ann\_cancer folder`
+`File -> Open Folder -> select the module5_ann_cancer folder`
 
 ## Step 2 — Open integrated terminal
 
@@ -103,7 +103,7 @@ pip install tensorflow-cpu
 ## Step 3 — Run the application
 
 ```bash
-python ann\_cancer\_diagnosis.py
+python ann_cancer_diagnosis.py
 ```
 
 ## Step 4 — Expected terminal output (summary)
@@ -170,13 +170,13 @@ All plots and the saved model appear in the `ann\_outputs/` folder.
 
 |File|What it shows|
 |-|-|
-|01\_correlation\_heatmap.png|Pearson correlation: top 10 FNA features vs diagnosis|
-|02\_training\_history.png|Loss and accuracy curves across training epochs|
-|03\_confusion\_matrix.png|Default threshold vs tuned threshold side by side|
-|04\_roc\_curve.png|ROC curve — AUC = 0.9921|
-|05\_cross\_validation.png|All metrics across 5 folds|
-|evaluation\_metrics.json|All metrics saved as JSON|
-|ann\_cancer\_model.keras|Saved TensorFlow model weights|
+|01_correlation_heatmap.png|Pearson correlation: top 10 FNA features vs diagnosis|
+|02_training_history.png|Loss and accuracy curves across training epochs|
+|03_confusion_matrix.png|Default threshold vs tuned threshold side by side|
+|04_roc_curve.png|ROC curve — AUC = 0.9921|
+|05_cross_validation.png|All metrics across 5 folds|
+|evaluation_metrics.json|All metrics saved as JSON|
+|ann_cancer_model.keras|Saved TensorFlow model weights|
 
 \---
 
@@ -241,7 +241,7 @@ pip install seaborn
 These are harmless. The code suppresses most with:
 
 ```python
-os.environ\['TF\_CPP\_MIN\_LOG\_LEVEL'] = '3'
+os.environ\['TF_CPP_MIN_LOG_LEVEL'] = '3'
 ```
 
 ## Plots not appearing as pop-up windows
@@ -253,8 +253,8 @@ Expected behaviour. The code uses matplotlib Agg backend which saves plots as PN
 The code does not require an external CSV — it loads data via sklearn. Ensure you are running from the project folder:
 
 ```bash
-cd path/to/module5\_ann\_cancer
-python ann\_cancer\_diagnosis.py
+cd path/to/module5_ann_cancer
+python ann_cancer_diagnosis.py
 ```
 
 \---
